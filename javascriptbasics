@@ -158,7 +158,7 @@ function myFunction(a, b) {
   return b / 100 * a
 }
 
-Not Solved
+Not Solved - Learnt about regex
 // Write a function that takes two strings (a and b) as arguments
 // Return the number of times a occurs in b
 
