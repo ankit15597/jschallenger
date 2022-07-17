@@ -211,3 +211,41 @@ a
 return a.toFixed(2);
 }
 
+// Write a function that takes a number (a) as argument
+// Round a to the 2nd digit after the comma
+// Return the rounded number
+
+Your solution
+function myFunction(a) {
+   
+   return parseFloat(a.toFixed(2));
+}
+
+The author's solution
+function myFunction(a) {
+  return Number(a.toFixed(2));
+}
+
+// Write a function that takes two strings (a and b) as arguments
+// If a contains b, append b to the beginning of a
+// If not, append it to the end
+// Return the concatenation
+
+Your solution
+function myFunction(a, b) {
+   
+   var reg = new RegExp(b);
+    if( a.match(reg) == null){
+        console.log("not match");
+        return a.concat(b);
+    }
+    else {
+        console.log("match");
+         return b.concat(a);
+    }
+}
+The author's solution
+
+function myFunction(a, b) {
+  return a.indexOf(b) === -1 ? a + b : b + a
+}
